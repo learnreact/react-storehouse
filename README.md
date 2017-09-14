@@ -1,14 +1,20 @@
 # react-storehouse
+A React component interface to LocalStorage
 
-## Why
-
-## Why not
-
-## API
-
-## Examples
-
-### Basic Example
+## Example
+This is a no frills example of using `react-storehouse` for a user name.
+```js
+  <LocalStorageProvider
+    item="name"
+    render={(name = "Guest", update) => (
+      <h1>Hi {name}!</h1>
+      <input
+        onChange={e => update(e.target.value)}
+        type="text"
+      />
+    )}
+  />
+```
 
 ## Installation
 ### Node
@@ -25,8 +31,6 @@ Exports `ReactStorehouse` on `window`.
   src="https://unpkg.com/react-storehouse"
 ></script>
 ```
-
-## TODO
 
 ## Code Quality
 [Learn React](#https://learnreact.com) open source, is intended for education.
