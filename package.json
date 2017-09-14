@@ -1,6 +1,6 @@
 {
   "name": "react-storehouse",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A component for use with localStorage and sessionStorage",
   "main": "dist/react-storehouse.cjs.js",
   "module": "dist/react-storehouse.esm.js",
