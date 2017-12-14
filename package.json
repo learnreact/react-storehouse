@@ -1,15 +1,16 @@
 {
   "name": "react-storehouse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component for use with localStorage and sessionStorage",
-  "main": "dist/react-storehouse.cjs.js",
+  "source": "index.js",
+  "main": "dist/react-storehouse.js",
   "module": "dist/react-storehouse.esm.js",
   "browser": "dist/react-storehouse.umd.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "author": "Michael Chan (@chantastic)",
   "license": "MIT",
@@ -29,14 +30,6 @@
     "react": "^15.6.1"
   },
   "devDependencies": {
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "rollup": "^0.43.0",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-watch": "^4.0.0"
+    "microbundle": "^0.2.4"
   }
 }
