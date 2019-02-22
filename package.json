@@ -30,6 +30,6 @@
     "react": "^15.6.1"
   },
   "devDependencies": {
-    "microbundle": "^0.2.4"
+    "microbundle": "^0.10.0"
   }
 }
