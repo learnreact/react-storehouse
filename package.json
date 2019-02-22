@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "npm run build",
     "build": "microbundle",
+    "prepublish": "npm run build",
     "dev": "microbundle watch"
   },
   "author": "Michael Chan (@chantastic)",
@@ -26,7 +27,7 @@
     "dist",
     "index.js"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "react": "^15.6.1"
   },
   "devDependencies": {
